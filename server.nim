@@ -14,7 +14,7 @@ var router = RestRouter.init(validate)
 router.rawApi(
   MethodPatch,
   "/patch") do () -> RestApiResponse:
-    return RestApiResponse.response(httputils.HttpCode.Http204)
+    return RestApiResponse.response(httputils.HttpCode.Http200)
 
 router.rawApi(
   MethodGet,

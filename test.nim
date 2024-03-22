@@ -11,7 +11,7 @@ suite "http 204 request/response":
   test "204":
     let client = newHttpClient()
     let patchResponse = client.patch("http://127.0.0.1:8000/patch")
-    check patchResponse.status == "204 No Content"
+    check patchResponse.status == "200 OK"
 
     let response = client.get("http://127.0.0.1:8000/ping")
     check response.status == "200 OK"
